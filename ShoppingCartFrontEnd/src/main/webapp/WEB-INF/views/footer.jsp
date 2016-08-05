@@ -31,7 +31,7 @@ footer {
 				</div>
 				<div class="collapse navbar-collapse" id="myNavbar">
 					<ul class="nav navbar-nav">
-						<li><a href="#">shopcart.com</a></li>
+						<li><a href="#">shoppingcart.com</a></li>
 						<li><a href="#">About Us</a></li>
 						<li><a href="#">Contact Us</a></li>
 						<li><a href="#">Delivery and Payment</a></li>

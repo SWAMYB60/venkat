@@ -1,34 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet"
-   href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-   
-  <script 
-  src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script
-   src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  	<center> 
-  	<p><font size="10" color="green">welcome to shoppingcart</font></ p></center>
-	<td>
-	</tr>
-	
-	</tr>
-	</td>
-	<ul class="nav navbar-nav navbar-left">
-	<td>
-	<tr>
-	
-	<tr>
-	</tr>
-	</ul>
-	<hr colour="blue">
-	<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> 
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> 
 <html lang="en">
 <head>
   <title>Bootstrap Example</title>
@@ -55,9 +25,9 @@
       
     </div>
     <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
+      <li class="active"><a href="index">Home</a></li>
       <li><a href="#">View All</a></li>
-      <li><a href="#">Admin</a></li>
+      <li><a href="addfurniture">Addfurniture</a></li>
       <li><a href="register">Register</a></li>
        <li><a href="#">Contact us</a></li>
       <li><a href="login">Login</a></li>
@@ -78,6 +48,7 @@
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
       <li data-target="#myCarousel" data-slide-to="3"></li>
+       <li data-target="#myCarousel" data-slide-to="4"></li>
     </ol>
     
    <!-- Wrapper for slides -->
@@ -89,20 +60,20 @@
     
     
       <div class="item active">
-         <img src="<c:url value="/resources/images/one.jpg"/>" alt="Chania" width="600" height="500">
+         <img src="<c:url value="/resources/images/furniture1.jpg"/>" alt="Chania" width="600" height="500">
       </div>
 
       <div class="item">
-        <img src="<c:url value="/resources/images/2.jpg"/>" alt="Chania" width="600" height="500">
+        <img src="<c:url value="/resources/images/furniture2.jpg"/>" alt="Chania" width="600" height="500">
       </div>
     
       <div class="item">
-        <img src="<c:url value="/resources/images/3.jpg"/>" alt="Chania" width="600" height="500"> 
+        <img src="<c:url value="/resources/images/furniture3.jpg"/>" alt="Chania" width="600" height="500"> 
       </div>
       
       
        <div class="item">
-         <img src="<c:url value="/resources/images/4.jpg"/>" alt="Chania" width="600" height="500">
+         <img src="<c:url value="/resources/images/furniture4.jpg"/>" alt="Chania" width="600" height="500">
       </div>
       
           <!-- Left and right controls -->
@@ -121,19 +92,20 @@
             
   <div class="row">
     <div class="col-sm-4">
-      <a href="enter">
+      
           
-         <img src="<c:url value="/resources/images/5.jpg"/>" alt="Pulpit Rock" style="width:300px;height:150px">
-         <a href="search?pro=chair" >chair</a>
+         <img src="<c:url value="/resources/images/furniture5.jpg"/>" alt="Pulpit Rock" style="width:300px;height:150px">
+         <a href="search?pro=chair" ># </a>
     </div>
     <div class="col-sm-4">
            
-         <img src="<c:url value="/resources/images/6.jpg"/>" alt="Moustiers Sainte Marie" style="width:300px;height:150px">
-         
+         <img src="<c:url value="/resources/images/furniture6.jpg"/>" alt="Moustiers Sainte Marie" style="width:300px;height:150px">
+          <a href="search?pro=chair" ># </a>
     </div>
     <div class="col-sm-4">
       <a href="enter pro?data=table">
-           <img src="<c:url value="/resources/images/7.jpg"/>" alt="Cinque Terre" style="width:300px;height:150px">
+           <img src="<c:url value="/resources/images/furniture7.jpg"/>" alt="Cinque Terre" style="width:300px;height:150px">
+            <a href="search?pro=chair" >#</a>
       </a>
     </div>
   </div>
@@ -144,5 +116,6 @@
 </body>
 </html>
 <%@include file="/WEB-INF/views/footer.jsp" %>
+ 
 </body>
 </html>

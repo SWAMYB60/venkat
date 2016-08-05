@@ -1,11 +1,10 @@
-
 <html>
 
 <head>
 <title>Registration Page</title>
 
 </head>
-<body id="wrap" style="background-color: lightblue;"> 
+<body id="wrap" style="background-color: WHITE;"> 
 <h3><b><font size="6">SIGNUP</font></b></h3>
 <form name="myform" method="POST" >
 
