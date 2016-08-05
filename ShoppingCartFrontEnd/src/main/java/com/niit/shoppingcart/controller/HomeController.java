@@ -29,21 +29,26 @@ public class HomeController {
 		return m2;
 
 	}
-	@RequestMapping("/venkat")
-	public String display2() {
 
-		 
+	@RequestMapping("/venkat")
+	public String display1() {
+
 		return "index";
 
 	}
 
-	
-	
 	@RequestMapping("/addfurniture")
-	public ModelAndView display1() {
+	public ModelAndView display2() {
 
 		ModelAndView m3 = new ModelAndView("addfurniture");
 		return m3;
+	}
+
+	@RequestMapping("/index")
+	public ModelAndView display3() {
+
+		ModelAndView m4 = new ModelAndView("index");
+		return m4;
 	}
 
 	@ModelAttribute("Product")

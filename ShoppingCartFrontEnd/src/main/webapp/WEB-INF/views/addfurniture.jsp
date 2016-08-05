@@ -29,14 +29,14 @@
 	<div class="container-fluid">
 		<div class="navbar-header"></div>
 		<ul class="nav navbar-nav">
-			<li><a href="home">Home</a></li>
+			<li><a href="index">Home</a></li>
 			<li><a href="ret">View All</a></li>
 			<li><a href="cont">Contact us</a></li>
 		</ul>
 	</div>
 	</nav>
 	<div class="container" ng-app="imgApp" ng-controller="imgCtrl">
-		<c:url var="addfurniture" value="addfurniture"></c:url>a
+		<c:url var="addfurniture" value="addfurniture"></c:url>
 		<form:form commandName="Product" method="post" action="storefurniture" enctype="multipart/form-data">
 			<table class="table table-bordered">
 				<tr>

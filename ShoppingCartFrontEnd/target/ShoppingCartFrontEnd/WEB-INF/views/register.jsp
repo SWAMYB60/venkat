@@ -1,22 +1,74 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>new user</title>
+<title>Registration Page</title>
+
 </head>
-<body>
-<h1>register here</h1><form name="myform" method="POST">
-first  name:  <input type="text"name="first name"><br></br>
-middle name:<input type="text"name="middle name"><br></br>
-last name:<input type="text"name="last name"><br></br>
-date of birth:<input type="text"name="date of birth"><br></br>
-email address:<input type="text"name="email "><br></br>
-phone no:<input type="text"name="phone no"><br></br>
-user name:<input type="text"name="user name"><br></br>
-password:<input type="password"name="password"><br></br>
-confirm password:<input type="password"name="confirm password"><br></br></form>
- <input type="submit"value="register">
- </body>
+<body id="wrap" style="background-color: WHITE;"> 
+<h3><b><font size="6">SIGNUP</font></b></h3>
+<form name="myform" method="POST" >
+
+${message}
+
+<table>
+<tr>
+        <td>FullName :</td>
+           <td><input type="text" name="Fullname"  placeholder="Enter FullName" required/></td>
+          
+           
+        
+    </tr>
+<tr>
+        <td>Username :</td>
+           <td><input type="text" name="username"  placeholder="Enter UserName" required/></td>
+        
+    </tr>
+     <tr>
+        <td>EmailId :</td>
+           <td><input type="email" name="email"  placeholder="Enter Email" required /></td>
+        
+    </tr>
+
+   
+    <tr>
+        <td>Password :</td>
+        <td><input type="password" name="password"  placeholder="Enter Password"  required/></td>
+    </tr>
+    <tr>
+    <td> Birthday:</td>
+ <td> <input type="date" name="dob"  placeholder="Date Of Birth" required /></td>
+ </tr>
+     <tr>
+    <td> Gender:</td>
+<td><input type="radio" name="gender" value="male" checked required/> Male<br>
+  <input type="radio" name="gender" value="female"/> Female<br></td>
+  </tr>
+ 
+    <tr>
+    <td> Mobile.No:</td>
+ <td> <input type="number" name="number" maxlength="10" placeholder="Enter Mobile No" required/></td>
+ 
+    </tr>
+    <tr>
+    <td> Address:</td>
+ <td> <input type="text" name="address"  placeholder="Enter Address" required /></td>
+    </tr>
+    
+     <tr>
+    <td> PinCode:</td>
+ <td> <input type="text" name="pin"    placeholder="Enter Pincode" required/></td>
+    </tr>
+    <tr>
+        <td colspan="2"><input type="submit" value="Register"></td>
+       </tr>
+      </table>
+      
+      
+</form>
+<br><br>
+<br><font>Already have an account? </font> <a href="login">LOGIN</a>
+
+<%@include file="/WEB-INF/views/footer.jsp" %>
+</body>
 </html>
+

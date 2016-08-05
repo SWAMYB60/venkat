@@ -21,14 +21,14 @@
 
 <div class="container">
   <h2>PLEASE ENTER YOUR DETAILS <h2>
-  <form action="isValidUser" method="post"><br>
+  <form name="myform" method="post"><br>
     <div class="form-group">
       <label for="username">Username:</label>
-      <input type="username" class="form-control" id="username" placeholder="Enter user">
+      <input type="username" class="form-control" id="username" placeholder="Enter user"> 
     </div>
     <div class="form-group">
       <label for="pwd">Password:</label>
-      <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password"> 
     </div>
     <div class="checkbox">
       <label><input type="checkbox"> Remember me</label>
