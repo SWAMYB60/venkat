@@ -12,7 +12,7 @@ public class ProductTest {
 		context.refresh();
 		ProductDAO productDAO = (ProductDAO) context.getBean("productDAO");
 		Product product = (Product) context.getBean("product");
-		product.setId("101");
+		product.setId(101);
 		product.setName("venkat");
 		product.setDescription("good");
         

@@ -31,14 +31,14 @@ public  class ProductDAOImpl implements ProductDAO
 		sessionFactory.getCurrentSession().saveOrUpdate(product);
 	}
 	@Transactional
-	public void delete(String id){
+	public void delete(int id){
 		Product product= new Product();
 		product.setId(id);
 		sessionFactory.getCurrentSession().delete(product);
 	}
 	@SuppressWarnings("unchecked")
 	@Transactional
-public Product get(String id)
+public Product get(int id)
 	{
 		String hql="from product where id="+"'"+id+"'";
 		Query query=(Query) sessionFactory.getCurrentSession().createQuery(hql);
@@ -47,6 +47,7 @@ public Product get(String id)
 			return listproduct.get(0);
 		}
 	return null;
+	
 	}
 }
  

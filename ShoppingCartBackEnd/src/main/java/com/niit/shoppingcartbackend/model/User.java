@@ -1,5 +1,6 @@
 package com.niit.shoppingcartbackend.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -16,6 +17,14 @@ public class User {
 	private String name;
 	private String password;
 	private String email;
+	public byte admin;
+	@Column(name="admin",columnDefinition="tinyinit default 0")
+	public byte getAdmin() {
+		return admin;
+	}
+	public void setAdmin(byte admin) {
+		this.admin = admin;
+	}
 	public String getId() {
 		return id;
 	}

@@ -48,5 +48,11 @@ public Category get(String id)
 		}
 	return null;
 	}
-}
+	public boolean isValidUser(String name, String password) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	}
+
  

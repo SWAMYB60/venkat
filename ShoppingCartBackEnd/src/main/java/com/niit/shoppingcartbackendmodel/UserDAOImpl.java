@@ -48,5 +48,19 @@ public User get(String id)
 		}
 	return null;
 	}
+	@Transactional
+	public boolean isValidUser(String id,String password){
+		String hq1="from user where id='"+id+"'and password'"+password+"'";
+		Query query=sessionFactory.getCurrentSession().createQuery(hq1);
+		List list=query.list();
+		if(list==null||list.isEmpty())
+				{
+			return false;
+				}
+		else
+		{
+			 return true;
+		}
+	}
 }
  

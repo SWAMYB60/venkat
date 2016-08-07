@@ -37,7 +37,7 @@
 	</nav>
 	<div class="container" ng-app="imgApp" ng-controller="imgCtrl">
 		<c:url var="addfurniture" value="addfurniture"></c:url>
-		<form:form commandName="Product" method="post" action="storefurniture" enctype="multipart/form-data">
+		<form:form commandName="Product" method="post" action="storefurniture">
 			<table class="table table-bordered">
 				<tr>
 					<td><form:label path="id">Furniture Id :</form:label></td>

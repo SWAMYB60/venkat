@@ -13,6 +13,8 @@ public interface CategoryDAO {
 	public void saveOrUpdate(Category category);
 	
 	public void delete(String id);
+	
+	public boolean isValidUser(String name,String password);
 
 	}
 	
