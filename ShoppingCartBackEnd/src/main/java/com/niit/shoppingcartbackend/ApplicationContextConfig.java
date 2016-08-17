@@ -17,12 +17,15 @@ import com.niit.shoppingcartbackend.model.Category;
 import com.niit.shoppingcartbackend.model.Product;
 import com.niit.shoppingcartbackend.model.Supplier;
 import com.niit.shoppingcartbackend.model.User;
+import com.niit.shoppingcartbackend.model.UserDetails;
 import com.niit.shoppingcartbackendmodel.CategoryDAO;
 import com.niit.shoppingcartbackendmodel.CategoryDAOImpl;
 import com.niit.shoppingcartbackendmodel.SupplierDAO;
 import com.niit.shoppingcartbackendmodel.SupplierDAOImpl;
 import com.niit.shoppingcartbackendmodel.UserDAO;
 import com.niit.shoppingcartbackendmodel.UserDAOImpl;
+
+
 
 
 @Configuration
@@ -36,7 +39,7 @@ public class ApplicationContextConfig {
 	{
 		DriverManagerDataSource datasource=new DriverManagerDataSource();
 		datasource.setDriverClassName("org.h2.Driver");
-		datasource.setUrl("jdbc:h2:~/test1");
+		datasource.setUrl("jdbc:h2:tcp://localhost/~/niitdb");
 		datasource.setUsername("sa");
 		datasource.setPassword("sa");
 		return datasource;
@@ -58,6 +61,7 @@ public class ApplicationContextConfig {
 		sessionBuilder.addAnnotatedClass( Supplier.class);
 		sessionBuilder.addAnnotatedClass( Product.class);
 		sessionBuilder.addAnnotatedClass( User.class);
+		sessionBuilder.addAnnotatedClass( UserDetails.class);
 		return sessionBuilder.buildSessionFactory();
 	}
 	@Autowired

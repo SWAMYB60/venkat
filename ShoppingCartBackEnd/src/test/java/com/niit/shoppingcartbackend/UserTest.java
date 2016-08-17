@@ -13,14 +13,10 @@ public class UserTest {
 		context.refresh();
 		UserDAO userDAO = (UserDAO) context.getBean("userDAO");
 		User user = (User) context.getBean("user");
-		user.setId("101");
-		user.setName("venkat");
-		user.setPassword("password");
-		user.setEmail("email");
+		 user.setId(101);
+		 user.setPassword("password");
+		 user.setAdmin(true);
 
-		
-
-		userDAO.saveOrUpdate(user);
 
 	}
 

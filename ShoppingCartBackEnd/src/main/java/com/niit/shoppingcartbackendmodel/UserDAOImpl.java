@@ -2,13 +2,15 @@ package com.niit.shoppingcartbackendmodel;
 import java.util.List;
 
 import org.hibernate.Criteria;
-import org.hibernate.Query;
+
 import org.hibernate.SessionFactory;
+import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.niit.shoppingcartbackend.model.User;
+
+import com.niit.shoppingcartbackend.model.UserDetails;
 
 @Repository("userDAO")
 public  class UserDAOImpl implements UserDAO 
@@ -20,31 +22,31 @@ public  class UserDAOImpl implements UserDAO
 		this.sessionFactory=sessionFactory;
 }
 	@Transactional
-	public List<User> list(){
+	public List<UserDetails> list(){
 		@SuppressWarnings("unchecked")
-		List<User> listuser=(List<User>)
-		sessionFactory.getCurrentSession().createCriteria(User.class).setResultTransformer(Criteria.DISTINCT_ROOT_ENTITY).list();
-		return listuser;
+		List<UserDetails> listuserDetails=(List<UserDetails>)
+		sessionFactory.getCurrentSession().createCriteria(UserDetails.class).setResultTransformer(Criteria.DISTINCT_ROOT_ENTITY).list();
+		return listuserDetails;
 	}
 	@Transactional
-	public void saveOrUpdate(User  user){
-		sessionFactory.getCurrentSession().saveOrUpdate(user);
+	public void saveOrUpdate(UserDetails  userDetails){
+		sessionFactory.getCurrentSession().saveOrUpdate(userDetails);
 	}
 	@Transactional
-	public void delete(String id){
-		User user= new User();
-		user.setId(id);
-		sessionFactory.getCurrentSession().delete(user);
+	public void delete(int id){
+		UserDetails userDetails= new UserDetails();
+		userDetails.setId(id);
+		sessionFactory.getCurrentSession().delete(userDetails);
 	}
 	@SuppressWarnings("unchecked")
 	@Transactional
-public User get(String id)
+public UserDetails get(int id)
 	{
 		String hql="from user where id="+"'"+id+"'";
 		Query query=(Query) sessionFactory.getCurrentSession().createQuery(hql);
-		List<User> listuser= (List<User>) query.getResultList();
-		if(listuser!=null && ! listuser.isEmpty()){
-			return listuser.get(0);
+		List<UserDetails> listuserDetails= (List<UserDetails>) query.getResultList();
+		if(listuserDetails!=null && ! listuserDetails.isEmpty()){
+			return listuserDetails.get(0);
 		}
 	return null;
 	}
@@ -61,6 +63,12 @@ public User get(String id)
 		{
 			 return true;
 		}
-	}
+	
+	 
+
+
+	 
+	
+}
 }
  

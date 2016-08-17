@@ -10,32 +10,18 @@ import org.springframework.stereotype.Component;
 @Entity
 @Table(name="user")
 @Component
-
 public class User {
 	@Id
-	private String id;
-	private String name;
+	@Column(name="id")
+	private int id;
 	private String password;
-	private String email;
-	public byte admin;
-	@Column(name="admin",columnDefinition="tinyinit default 0")
-	public byte getAdmin() {
-		return admin;
-	}
-	public void setAdmin(byte admin) {
-		this.admin = admin;
-	}
-	public String getId() {
+	@Column(name="admin")
+	public boolean isAdmin;
+	public int getId() {
 		return id;
 	}
-	public void setId(String id) {
+	public void setId(int id) {
 		this.id = id;
-	}
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
 	}
 	public String getPassword() {
 		return password;
@@ -43,11 +29,12 @@ public class User {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	public String getEmail() {
-		return email;
+	public boolean isAdmin() {
+		return isAdmin;
 	}
-	public void setEmail(String email) {
-		this.email = email;
+	public void setAdmin(boolean isAdmin) {
+		this.isAdmin = isAdmin;
 	}
+	  	 
 }
 	 

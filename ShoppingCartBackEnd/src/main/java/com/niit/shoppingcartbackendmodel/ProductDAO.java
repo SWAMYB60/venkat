@@ -13,6 +13,15 @@ public interface ProductDAO {
 	public void saveOrUpdate(Product product);
 	
 	public void delete(int id);
+	
+	public int deleteProduct(int id);
+	public List getAllProducts();
+	 
+	
+	
+	 
+	
+	 
 
 	}
 	
