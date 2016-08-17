@@ -9,6 +9,7 @@ footer {
     height: 50px;
     bottom: 0;
     width: 100%;
+    
 }
 </style>
 

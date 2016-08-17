@@ -6,7 +6,7 @@
 
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>shoppingcart.com</title>
   <center>
   <h1> Welcome</h1>
   </center>
@@ -25,25 +25,27 @@
   </style>
 </head>
 <body>
-	<nav class="navbar navbar-default">
-	<div class="container-fluid">
-		<div class="navbar-header"></div>
-		<ul class="nav navbar-nav">
-			<li><a href="index">Home</a></li>
-			<li><a href="ret">View All</a></li>
-			<li><a href="cont">Contact us</a></li>
-		</ul>
-	</div>
-	</nav>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="hi">Home</a></li>
+      <li><a href="#">View All</a></li>
+     
+      
+       <li><a href="#">Contact us</a></li>
+      
+     </ul>
+  </div>
+</nav>
+	
 	<div class="container" ng-app="imgApp" ng-controller="imgCtrl">
 		<c:url var="addfurniture" value="addfurniture"></c:url>
 		<form:form commandName="Product" method="post" action="storefurniture" enctype="multipart/form-data">
 			<table class="table table-bordered">
-				<tr>
-					<td><form:label path="id">Furniture Id :</form:label></td>
-					<td><form:input path="id" /> <font color="red"><form:errors
-								path="id"></form:errors></font></td>
-				</tr>
+				
 				<tr>
 					<td><form:label path="name">Furniture Name :</form:label></td>
 					<td><form:input path="name" /> <font color="red"><form:errors
@@ -54,7 +56,17 @@
 					<td><form:input path="description" /> <font color="red"><form:errors
 								path="description"></form:errors></font></td>
 				</tr>
-
+				<tr>
+					<td><form:label path="price">Furniture Price :</form:label></td>
+					<td><form:input path="price" /> <font color="red"><form:errors
+								path="price"></form:errors></font></td>
+				</tr>
+         </tr>          
+           <tr><td><form:label path="img">Furniture Image :</form:label></td>
+               <td><form:input path="img" type="file"/>
+               <font color="red"><form:errors path="img"></form:errors></font></td>
+               
+           </tr>
 
 				<td><input type="submit" value="submit" class="btn" /></td>
 				</tr>

@@ -18,6 +18,39 @@
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
 <body>
+<style>
+body {
+    background-image: url("furniture1.jpg");
+}
+</style>
+</head>
+<body>
+
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 60%;
+      margin: auto;
+  }
+  </style>
+</head>
+<body>
+
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="hi">Home</a></li>
+      <li><a href="#">View All</a></li>
+      <li><a href="addfurniture">Addfurniture</a></li>
+      <li><a href="register">Register</a></li>
+       <li><a href="#">Contact us</a></li>
+          </ul>
+  </div>
+</nav>
+
 
 <div class="container">
   <h2>PLEASE ENTER YOUR DETAILS <h2>

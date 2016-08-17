@@ -1,7 +1,11 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> 
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>shoppingcart.com</title>
+  <center>
+  
+  <h1>SHOPPING CART</h1>
+  </center>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -25,12 +29,14 @@
       
     </div>
     <ul class="nav navbar-nav">
-      <li class="active"><a href="index">Home</a></li>
+      <li class="active"><a href="hi">Home</a></li>
       <li><a href="#">View All</a></li>
       <li><a href="addfurniture">Addfurniture</a></li>
       <li><a href="register">Register</a></li>
        <li><a href="#">Contact us</a></li>
       <li><a href="login">Login</a></li>
+      <li><a href="display">display</a></li>
+      
      </ul>
   </div>
 </nav>
@@ -95,17 +101,17 @@
       
           
          <img src="<c:url value="/resources/images/furniture5.jpg"/>" alt="Pulpit Rock" style="width:300px;height:150px">
-         <a href="search?pro=chair" ># </a>
+         <a href="search?pro=chair" > </a>
     </div>
     <div class="col-sm-4">
            
          <img src="<c:url value="/resources/images/furniture6.jpg"/>" alt="Moustiers Sainte Marie" style="width:300px;height:150px">
-          <a href="search?pro=chair" ># </a>
+          <a href="search?pro=chair" > </a>
     </div>
     <div class="col-sm-4">
       <a href="enter pro?data=table">
            <img src="<c:url value="/resources/images/furniture7.jpg"/>" alt="Cinque Terre" style="width:300px;height:150px">
-            <a href="search?pro=chair" >#</a>
+            <a href="search?pro=chair" ></a>
       </a>
     </div>
   </div>
